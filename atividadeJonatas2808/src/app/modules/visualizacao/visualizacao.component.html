@@ -1,0 +1,14 @@
+<div class="animal-list">
+    <h3>Dados do Animal</h3>
+    <ul>
+      <li>
+        <strong>Nome:</strong> {{ animal.name }}<br />
+        <strong>Espécie:</strong> {{ animal.species}}<br />
+        <strong>Idade:</strong> {{ animal.age }} anos<br />
+        <strong>Dono:</strong> {{ animal.owner }}
+      </li>
+    </ul>
+
+    <button type="submit" (click)="enviarFormulario()" class="submit-button">Submit</button>
+  </div>
+

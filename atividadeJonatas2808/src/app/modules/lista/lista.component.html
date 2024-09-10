@@ -1,0 +1,21 @@
+<h2>Lista de Animais</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Espécie</th>
+      <th>Dono</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let animal of animais">
+      <td>{{ animal.name }}</td>
+      <td>{{ animal.age }}</td>
+      <td>{{ animal.species }}</td>
+      <td>{{ animal.owner }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button  [routerLink]="['../formulario']" class="submit-button">Cadastrar Novo Animal</button>
